@@ -8,6 +8,9 @@ public class Employee {
     private String jobTitle;
     private double salary;
 
+    public Employee() {  // for easy object instantiation no-args constructor
+    }
+
     public String getEmail() {
         return email;
     }
