@@ -5,6 +5,11 @@ public class Developer {
     private String language;
     private boolean isFullTime;
 
+    public Developer(String language, boolean isFullTime) {
+        this.language = language;
+        this.isFullTime = isFullTime;
+    }
+
     public String getLanguage() {
         return language;
     }
