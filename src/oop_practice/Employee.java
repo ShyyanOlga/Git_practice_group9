@@ -1,6 +1,6 @@
 package oop_practice;
 
-public class Employee {
+public class Employee extends Person{
 
     private String email;
     private String state;
@@ -8,7 +8,23 @@ public class Employee {
     private String jobTitle;
     private double salary;
 
-    public Employee() {  // for easy object instantiation no-args constructor
+    public Employee(String name, int age, char gender, String email, String state, String id, String jobTitle, double salary) {
+        super(name, age, gender);
+        this.email = email;
+        this.state = state;
+        this.id = id;
+        this.jobTitle = jobTitle;
+        this.salary = salary;
+    }
+
+    public Employee() {
+        super();  // for easy object instantiation no-args constructor
+    }
+
+    public Employee(String id, String jobTitle) {
+        super();
+        this.id = id;
+        this.jobTitle = jobTitle;
     }
 
     public String getEmail() {
