@@ -31,4 +31,8 @@ public class Developer extends Employee{
         isFullTime = fullTime;
     }
 
+    public void code(){
+        System.out.println(name+ " is coding ");
+    }
+
 }
