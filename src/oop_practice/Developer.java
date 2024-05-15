@@ -25,4 +25,5 @@ public class Developer {
     public void setFullTime(boolean fullTime) {
         isFullTime = fullTime;
     }
+
 }
