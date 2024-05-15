@@ -11,6 +11,11 @@ public class Employee {
     public Employee() {  // for easy object instantiation no-args constructor
     }
 
+    public Employee(String id, String jobTitle) {
+        this.id = id;
+        this.jobTitle = jobTitle;
+    }
+
     public String getEmail() {
         return email;
     }
