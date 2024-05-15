@@ -66,4 +66,8 @@ public class Employee extends Person{
     public void setSalary(double salary) {
         this.salary = salary;
     }
+
+    public void work(){
+        System.out.println(name+" is working");
+    }
 }

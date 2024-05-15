@@ -1,9 +1,14 @@
 package oop_practice;
 
-public class Developer {
+public class Developer extends Employee{
 
     private String language;
     private boolean isFullTime;
+
+    public Developer(String name, int age, char gender, String email, String state, String id, String jobTitle, double salary, String language) {
+        super(name, age, gender, email, state, id, jobTitle, salary);
+        this.language = language;
+    }
 
     public Developer(String language, boolean isFullTime) {
         this.language = language;
@@ -24,6 +29,10 @@ public class Developer {
 
     public void setFullTime(boolean fullTime) {
         isFullTime = fullTime;
+    }
+
+    public void code(){
+        System.out.println(name+ " is coding ");
     }
 
 }
