@@ -17,6 +17,9 @@ public class Main {
 
         Person sasha = new Developer();
         sasha.name = "Sasha";
+        sasha.age = 37;
+        sasha.gender = 'F';
+        System.out.println(sasha);
 
 
     }
