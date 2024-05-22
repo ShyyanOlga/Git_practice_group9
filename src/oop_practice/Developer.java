@@ -5,7 +5,11 @@ public class Developer extends Employee{
     private String language;
     private boolean isFullTime;
 
-    public Developer(String name, int age, char gender, String email, String state, String id, String jobTitle, double salary, String language) {
+    public Developer() {
+        super();
+    }
+
+    public Developer(String name, int age, char gender, String email, String state, String id, String jobTitle, double salary, String language, boolean b) {
         super(name, age, gender, email, state, id, jobTitle, salary);
         this.language = language;
     }

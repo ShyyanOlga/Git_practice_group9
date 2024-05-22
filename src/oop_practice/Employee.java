@@ -8,6 +8,10 @@ public class Employee extends Person{
     private String jobTitle;
     private double salary;
 
+    public Employee(String name, int age, char gender) {
+        super(name, age, gender);
+    }
+
     public Employee(String name, int age, char gender, String email, String state, String id, String jobTitle, double salary) {
         super(name, age, gender);
         this.email = email;
