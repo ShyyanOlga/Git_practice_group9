@@ -7,4 +7,7 @@ public class Student extends Person{
     public void study(){
         System.out.println(name+ " is study");
     }
+    public void takingBreak(){
+        System.out.println(name +" is taking break");
+    }
 }
